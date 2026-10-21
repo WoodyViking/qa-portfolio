@@ -1,0 +1,11 @@
+node_modules/
+test-results/
+playwright-report/
+.phpunit.result.cache
+.env
+*.env
+config.php
+*.zip
+.DS_Store
+Thumbs.db
+.masking/

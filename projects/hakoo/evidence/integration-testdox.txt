@@ -1,0 +1,551 @@
+Users Library
+ [x] Ensure user creates the row only once
+ [x] Ensure user at login updates last login
+ [x] Collect user returns every registered table
+ [x] Delete user removes all data of that user
+ [x] Delete user leaves other people untouched
+ [x] Deletion log stores a hash not the id
+ [x] Deleting the user row cascades to every table
+ [x] Member data without a user row is rejected
+ [x] Delete user cleans the json files
+ [x] Reapply deletions after restoring a backup
+ [x] Delete user with no data
+
+Gomoku Engine
+ [x] Exactly five wins in every direction
+ [x] Six in a row is not a win
+ [x] Filling a gap to exactly five wins
+ [x] Exact five counts even when the stone also makes an overline
+ [x] Occupied point is rejected
+ [x] Move out of turn is rejected
+ [x] No moves after a win
+ [x] Full board without five is a draw
+ [x] Board size and bounds
+ [x] Computer plays a legal move on every level
+ [x] Computer opens in the centre
+ [x] Computer completes its own five
+ [x] Computer blocks a four
+ [x] Computer blocks an open three
+ [x] Computer does not count an overline as a win
+ [x] Hard level answers within three seconds
+ [x] Harder levels are stronger
+
+Chess Engine
+ [x] Start position
+ [x] Perft
+ [x] Checkmate
+ [x] Stalemate
+ [x] Automatic draws
+ [x] Illegal moves are refused
+ [x] Castling
+ [x] En passant
+ [x] Promotion
+ [x] San disambiguation
+ [x] Every level takes mate in one
+ [x] Medium and hard take a free queen
+ [x] Hard finds mate in two
+ [x] Answers in time with a legal move
+ [x] Medium beats easy
+ [x] Fog what a player sees
+ [x] Fog taking the king wins
+ [x] Fog believed position and memory
+ [x] Fog computer takes the king
+ [x] Fog medium beats easy
+ [x] Fog ghosts at the start
+ [x] Fog a piece out of sight stays where it was seen
+ [x] Fog a ghost goes when the square is seen again
+ [x] Fog a ghost goes when the piece is seen elsewhere
+ [x] Fog the loser sees what took the piece
+ [x] Fog taking en passant
+ [x] Fog the view does not depend on what was not seen
+
+Othello Engine
+ [x] Start position
+ [x] Perft
+ [x] Flips in every direction
+ [x] Illegal moves are refused
+ [x] Pass
+ [x] Draw
+ [x] Replay from moves
+ [x] Medium and hard take a corner
+ [x] Answers in time with a legal move
+ [x] Medium beats easy
+
+Hnefatafl Engine
+ [x] Start position
+ [x] Moves and restricted squares
+ [x] Custodian capture
+ [x] Hostile squares
+ [x] Armed king
+ [x] Shieldwall
+ [x] King capture
+ [x] King escapes to a corner
+ [x] Edge fort
+ [x] Encirclement
+ [x] No moves loses
+ [x] Repetition
+ [x] From moves replays the game
+ [x] Computer takes the corner
+ [x] Computer blocks the king
+ [x] Computer is fast enough
+ [x] Easy games finish
+
+Stratego Engine
+ [x] Setup
+ [x] Move rules
+ [x] Battles
+ [x] Special pieces
+ [x] Capture the flag
+ [x] No moves loses
+ [x] Two squares and no battles
+ [x] Hidden information
+ [x] Computer does not peek
+ [x] Computer uses what it saw
+ [x] Computer setup
+ [x] Computer games end
+
+Ludo Engine
+ [x] Leaving the nest
+ [x] Knocking out
+ [x] Finishing variants
+ [x] Three tries
+ [x] Choices errors and winning
+ [x] Blocks
+ [x] Safe start
+ [x] Hutt
+ [x] Computer players
+ [x] Viking boards
+ [x] Viking faces and feathers
+ [x] Viking landing
+ [x] Viking tries and win
+ [x] Viking computer players
+ [x] Viking upgrade from 13 an arm
+ [x] Classic board of 14 an arm
+
+Yatzy Engine
+ [x] Upper rows
+ [x] Equal dice rows
+ [x] Fixed and sum rows
+ [x] Bonus boundary and maximum
+ [x] Rolls of a turn
+ [x] Rows and forced order
+ [x] End and winners
+ [x] Computer levels
+
+Backgammon Engine
+ [x] Start position
+ [x] Blocked points and hits
+ [x] Entering from the bar
+ [x] Dice must be used
+ [x] Doubles
+ [x] Bearing off
+ [x] Results
+ [x] Replay from turns
+ [x] Computer plays whole games
+ [x] Medium is better than easy
+
+Checkers Engine
+ [x] Start and english perft
+ [x] International start and perft
+ [x] Taking is compulsory
+ [x] Multi jumps and the majority rule
+ [x] Crowning
+ [x] Kings and backward takes
+ [x] Game ends
+ [x] Computer
+
+Morris Engine
+ [x] Board
+ [x] Placing
+ [x] Mills and taking
+ [x] Moving and flying
+ [x] Game ends
+ [x] Computer
+
+Nonogram Engine
+ [x] Clues
+ [x] Line logic
+ [x] Generated puzzles are unique and solvable by logic
+ [x] Seeds and the check
+ [x] Daily seed
+
+Runborg Engine
+ [x] Start per board and opponent
+ [x] Paying and damage
+ [x] Winning per board
+ [x] Again and turns
+ [x] Computer plays by the rules
+ [x] Each opponent beats the one below
+ [x] Raids steal what they take
+ [x] Vision throws away the picked card
+ [x] Snap has no hands
+
+Sudoku Engine
+ [x] Solver tricks
+ [x] Generated puzzles are unique and need their level
+ [x] Seeds and the check
+
+Owldoku Engine
+ [x] Generated puzzles
+ [x] Solver never guesses
+ [x] Seeds and the checks
+
+Blockdoku Engine
+ [x] The blocks
+ [x] Fits
+ [x] Clearing
+ [x] Points
+ [x] Moves and the end
+
+My Data Api
+ [x] Export requires login
+ [x] Forged session cookie is rejected
+ [x] Export contains every kind of data
+ [x] Export has every table of the register
+ [x] Delete without confirmation deletes nothing
+ [x] Delete with confirmation erases everything and logs out
+ [x] Delete via get is refused
+
+Roster Api
+ [x] Roster requires login
+ [x] In game name length with data set "EP invalid: empty (0)"
+ [x] In game name length with data set "BVA valid: min (1)"
+ [x] In game name length with data set "BVA valid: max (64)"
+ [x] In game name length with data set "BVA invalid: max+1 (65)"
+ [x] In game name length with data set "EP invalid: spaces only"
+ [x] Note is truncated at 120
+ [x] Mastery rank is clamped with data set "below min (-1) -> 0"
+ [x] Mastery rank is clamped with data set "min (0)"
+ [x] Mastery rank is clamped with data set "min+1 (1)"
+ [x] Mastery rank is clamped with data set "max-1 (39)"
+ [x] Mastery rank is clamped with data set "max (40)"
+ [x] Mastery rank is clamped with data set "above max (41) -> 40"
+ [x] Mastery rank is clamped with data set "empty -> none"
+ [x] Game must be supported with data set "valid: warframe"
+ [x] Game must be supported with data set "valid: wows"
+ [x] Game must be supported with data set "valid: upper case WOT"
+ [x] Game must be supported with data set "invalid: unknown game"
+ [x] First write by a new member creates the user row
+ [x] List hides discord ids
+
+Texts Api
+ [x] Languages lists the enabled languages in order
+ [x] Returns texts in the requested language
+ [x] Missing translation falls back to english
+ [x] Unknown language falls back to english
+ [x] Sql injection in lang is harmless
+ [x] Invalid page name is rejected
+ [x] Etag gives 304 when nothing changed
+ [x] Start page hub and game pages have their texts
+ [x] A game page gets the shared game texts by their english
+
+Texts Admin Api
+ [x] State needs a login
+ [x] Member reads all texts and has no role
+ [x] Role is requested then given then removed
+ [x] Only the admin gives the role
+ [x] Suggesting needs the role
+ [x] A suggestion waits and changes nothing
+ [x] A translator cannot suggest english
+ [x] Admin approves a suggestion
+ [x] Admin rejects a suggestion
+ [x] Only the admin saves directly
+ [x] Empty english is rejected but a translation can be cleared
+ [x] Sql injection in lang and unknown key are rejected
+ [x] Changes need a json post
+ [x] Withdraw only my own suggestion
+ [x] Deleting a member removes role and suggestions
+
+Link Api
+ [x] Callback without token is refused
+ [x] Valid token for another account is refused
+ [x] Verified token links the account and hands the token to the browser
+ [x] Wot start passes the return page to wargaming
+ [x] Foreign return address is ignored
+ [x] Callback without discord session links nothing
+
+Session Security
+ [x] Cookie signed with the public api secret is rejected
+ [x] Cookie signed with the session secret is accepted
+ [x] Login start remembers an own return page
+ [x] Login start ignores a foreign return address
+ [x] Logout returns to an own page only
+
+Gomoku Api
+ [x] New computer game
+ [x] Computer opens when it is black
+ [x] Move and computer reply
+ [x] Occupied point is rejected
+ [x] Move out of turn is rejected
+ [x] Wrong token is refused
+ [x] Friend invite and join
+ [x] Game is limited to two players
+ [x] Invalid cancelled and expired invites
+ [x] Five in a row wins and ends the game
+ [x] Resign
+ [x] End game without winner
+ [x] Polling with since version
+ [x] Name rules
+ [x] No cookies
+ [x] Unknown difficulty falls back to medium
+
+Gomoku Rewards
+ [x] Only logged in computer games count
+ [x] First win unlocks the reward
+ [x] Anonymous win unlocks nothing
+ [x] Me reports unlocks and look
+ [x] Look respects unlocks
+ [x] Crowns
+ [x] Forged cookie is ignored
+ [x] Delete removes rewards and games
+
+Chess Api
+ [x] New computer game
+ [x] Computer opens when it is white
+ [x] Move and computer reply
+ [x] Bad moves are refused
+ [x] Wrong token is refused
+ [x] Checkmate ends the game
+ [x] Friend game and polling
+ [x] Resign end and no cookies
+ [x] Fog hides what a player cannot see
+ [x] Fog king capture and no reward
+ [x] Fog computer game
+ [x] Unknown variant is refused
+ [x] Fog looking back keeps the fog
+ [x] Fog state has ghosts and what took a piece
+ [x] Standard game has no ghosts
+ [x] Fog what is sent does not depend on hidden moves
+
+Othello Api
+ [x] New games
+ [x] Move flips and computer answers
+ [x] Bad moves are refused
+ [x] Whole game against the computer
+ [x] Friend game resign and no cookies
+ [x] State after k moves
+
+Hnefatafl Api
+ [x] New games
+ [x] Move and computer answers
+ [x] Bad moves are refused
+ [x] Friend game king escapes
+ [x] Whole game against the computer
+ [x] Rewards and look
+ [x] Crowns
+ [x] Looking back
+
+Stratego Api
+ [x] New games
+ [x] Hidden pieces stay on the server
+ [x] Bad setups and moves
+ [x] Friend game
+ [x] Flag win and reward
+ [x] Crowns
+
+Board Game Rewards
+ [x] Chess first win unlocks the reward
+ [x] Othello win unlocks the reward
+ [x] Othello win on the computers last disc unlocks the reward
+ [x] Me reports unlocks and look
+ [x] Look respects unlocks
+ [x] Crowns over all games
+ [x] Delete removes rewards and games
+
+Saved Games
+ [x] First win is saved
+ [x] Games against the computer are saved
+ [x] Game between members is saved for both
+ [x] Watch a saved game
+ [x] List star and delete
+ [x] Only the latest hundred are kept
+ [x] The latest hundred against the computer are kept
+ [x] Delete member anonymises the other copy
+ [x] Fog game is saved whole
+
+Reminders Api
+ [x] Save and read the reminders
+ [x] Direct messages need consent
+ [x] Tick sends due reminders once
+ [x] Late reminders
+ [x] A new time that has passed waits for tomorrow
+ [x] Direct message and refused one
+ [x] Reminded every day
+ [x] Export and delete
+
+Board Settings Api
+ [x] Settings need login and post
+ [x] No speed until chosen
+ [x] Dice settings are saved one at a time
+ [x] Dice only leaves speed unchosen
+ [x] Invalid dice settings are refused
+ [x] Valid speeds are saved for every game
+ [x] Invalid speeds are refused
+ [x] Speed is exported and deleted
+
+Appearance Api
+ [x] Login and post are needed
+ [x] Valid looks are saved
+ [x] Bad looks are refused
+ [x] Hard to read is refused
+ [x] Reset export and delete
+ [x] Valid gradients are saved
+ [x] Bad or unreadable gradients are refused
+ [x] Boxes and moving background
+ [x] Hard to read is kept when confirmed
+
+Ludo Api
+ [x] Computer game starts at once
+ [x] Lobby join ready start
+ [x] Rolling and moving
+ [x] Leaving
+ [x] Takeover after idle
+ [x] Invalid input
+ [x] Hutt waits for the sup
+ [x] Member choices are remembered
+ [x] Member settings
+ [x] Viking six players
+ [x] Viking game from before the corner square
+ [x] Classic game from the board of 40
+ [x] Viking players and colours
+
+Yatzy Api
+ [x] Computer game starts at once
+ [x] Rolling keeping and scoring
+ [x] Lobby join ready start
+ [x] Leave and takeover
+ [x] Invalid input
+ [x] Member choices are remembered
+
+Backgammon Api
+ [x] New games and the opening roll
+ [x] Bad requests are refused
+ [x] Illegal plays
+ [x] Whole game against the computer
+ [x] Friend game and no cookies
+ [x] State after k turns
+
+Checkers Api
+ [x] New games
+ [x] Move and computer answers
+ [x] Bad moves are refused
+ [x] Friend game takes
+ [x] Rewards and look
+ [x] Crowns and looking back
+
+Morris Api
+ [x] New games
+ [x] Turns and bad requests
+ [x] Friend game mill
+ [x] Rewards and look
+ [x] Crowns and looking back
+
+Nonogram Api
+ [x] Practice puzzles
+ [x] Solve anonymous
+ [x] Daily anonymous
+ [x] Daily member
+ [x] Rewards look and crown
+
+Sudoku Api
+ [x] Practice puzzles
+ [x] Solve anonymous
+ [x] Daily
+ [x] Rewards look and crown
+ [x] Saves
+
+Owldoku Api
+ [x] Practice place and solve
+ [x] Daily member
+ [x] Out of hearts
+ [x] Rewards look and crown
+
+Blockdoku Api
+ [x] A game and its moves
+ [x] Game over
+ [x] A member goes on elsewhere
+ [x] Todays high scores
+ [x] Yesterdays first three and their colours
+ [x] Reminders
+ [x] Data
+
+Puzzle Saves Api
+ [x] Squares kept with data set "owldoku"
+ [x] Squares kept with data set "nonogram"
+
+Berserk Api
+ [x] A run and its score
+ [x] Impossible reports
+ [x] The lists and the first three
+ [x] Export and delete
+ [x] A members keys follow them
+
+Wot Snapshots Api
+ [x] Unchanged snapshots are not stored again
+
+Runborg Api
+ [x] New game hides the hidden cards
+ [x] Play with the token and the computer answers
+ [x] A members win is a title
+ [x] The title by the name
+ [x] Export and delete
+
+Runborg Friend Api
+ [x] Invite and the same start
+ [x] Turns and the waiting view
+ [x] Challenge through the bot
+ [x] Giving up
+
+Members Api
+ [x] Who sees the list
+ [x] A profile
+ [x] Own choices
+ [x] Name and data
+
+Avatar Api
+ [x] Logged out
+ [x] Unlocked by what was done
+ [x] Save keeps only what is allowed
+ [x] Hard items
+ [x] Legs feet and backgrounds
+ [x] Won colours and patterns
+ [x] The shield
+ [x] Height and build
+ [x] Where it shows
+ [x] In the data
+
+Players Api
+ [x] The list
+ [x] Groups and tags
+ [x] A card
+ [x] Medals
+ [x] Leave the list
+ [x] Todays puzzlers
+
+Admin Api
+ [x] Only admins see the page
+ [x] Owner gives and takes the admin role
+ [x] Badges and bad requests
+ [x] Admin runs loot codes and translations
+ [x] Statistics count games and members
+ [x] Tester gets the discord role
+ [x] Admins give roles and ranks
+ [x] Og and founder ranks
+ [x] Founder gives and takes the admin role
+ [x] Owner names a member
+ [x] Roles in the export and deleted with the member
+
+Challenge Api
+ [x] A challenge is posted for the challenged member
+ [x] Only the challenged member can accept
+ [x] Both members get their seat back with the link
+ [x] The post follows the game
+ [x] Bad challenges are refused
+ [x] The bot challenges for a member
+ [x] Challenges in the export and deleted with the member
+
+Report Api
+ [x] Report is posted
+ [x] Report needs a member and text
+ [x] Report limit
+

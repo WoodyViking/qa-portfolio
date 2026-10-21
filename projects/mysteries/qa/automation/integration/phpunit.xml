@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Integration and API tests for Mysteries. Run in Docker: see docker/README.md. -->
+<phpunit bootstrap="bootstrap.php" colors="true" cacheResult="false">
+  <testsuites>
+    <testsuite name="mysteries">
+      <directory suffix="Test.php">.</directory>
+    </testsuite>
+  </testsuites>
+  <logging>
+    <junit outputFile="/qa/test-results/phpunit-junit.xml"/>
+    <testdoxText outputFile="/qa/test-results/phpunit-testdox.txt"/>
+  </logging>
+</phpunit>

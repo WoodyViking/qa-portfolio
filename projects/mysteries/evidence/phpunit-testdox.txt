@@ -1,0 +1,148 @@
+Escape Api
+ [x] Create and start limits
+ [x] The answers stay on the server
+ [x] Answers and giving
+ [x] Pause and end
+ [x] Leaver leaves the fragments
+ [x] The puzzles keep their secrets
+
+Escape Content
+ [x] Structure
+ [x] Many deals are sound
+ [x] False lines are found
+ [x] Unfair deals are found
+ [x] The rune row is split
+ [x] Deals differ
+ [x] Texts and pictures
+
+Escape Engine
+ [x] Bellows
+ [x] Tool wall
+ [x] Rune lock
+ [x] Chest and keys
+ [x] Chart
+ [x] Hints and stars
+ [x] Leaver
+ [x] What the screens see
+ [x] Pause holds the fire
+
+Gate
+ [x] Not logged in gets login link
+ [x] Member without role is denied
+ [x] Tester and owner get in
+ [x] Page is not indexed
+ [x] Language and english fallback
+ [x] Mystery content is never served
+
+Lighthouse Content
+ [x] Structure
+ [x] Many deals are sound
+ [x] Broken puzzles are found
+ [x] Texts and pictures
+
+Ludo Api
+ [x] Ludo needs two players
+ [x] Colours and way of rolling
+ [x] Turns and the servers die
+ [x] The computer takes over
+ [x] A new player takes over
+
+Ludo Engine
+ [x] Boards and arms
+ [x] Special squares
+ [x] Coming out
+ [x] Feathers
+ [x] Crown face
+ [x] Landing
+ [x] Home and win
+ [x] Move needs a roll and a legal piece
+ [x] Six players
+ [x] Computers pick
+ [x] Old game moves on
+
+Mystery Api
+ [x] Create and start limits
+ [x] The variant stays on the server
+ [x] Search
+ [x] Show
+ [x] Wrong accusations
+ [x] Right accusation wins
+ [x] Notebook
+ [x] Host ends
+ [x] Turn skips a player who left
+ [x] Rules in the lobby
+ [x] Ask over the api
+
+Mystery Content
+ [x] Structure
+ [x] Every variant has exactly one solution
+ [x] Lengths
+ [x] Cards do not reveal the variant
+ [x] Every text in four languages
+ [x] Checker finds faults
+ [x] Pictures
+ [x] Draw is random
+
+Mystery Rules
+ [x] Rules in the lobby
+ [x] Free turns
+ [x] Penalty turns
+ [x] Penalty wait
+ [x] Ask and answer
+ [x] Doors
+ [x] Together
+
+Puzzle Engine
+ [x] Sliding pictures
+ [x] Gas pipe
+ [x] Third hint on the valves
+ [x] Lens rings
+ [x] Signal
+ [x] Leaver leaves the puzzles
+ [x] What the screens see of the puzzles
+
+Rpg Api
+ [x] Create and start limits
+ [x] Lobby heroes are saved
+ [x] What each device gets
+ [x] The pure game master
+ [x] Played to the end levels up
+ [x] Host end gives no level
+
+Rpg Content
+ [x] Structure
+ [x] Broken heroes are stopped
+ [x] Broken adventures are stopped
+ [x] Playthroughs end
+ [x] Fights are balanced
+
+Rpg Engine
+ [x] Party rules
+ [x] Dice
+ [x] Knocked out never dead
+ [x] Votes
+ [x] What each device sees
+ [x] Game master gone computer goes on
+ [x] Leaver heroes taken over
+ [x] Pause keeps the fight
+ [x] Runes and buttons
+ [x] Only what can be done
+ [x] The end
+
+Session Api
+ [x] Create needs a tester and valid settings
+ [x] Board waits for the host
+ [x] Refused device
+ [x] Players are logged in testers
+ [x] Private cards stay private
+ [x] Show a card to all
+ [x] Polling since
+ [x] Pause and resume
+ [x] Leave
+ [x] One player several devices
+
+Mode Api
+ [x] The hosts test players
+ [x] Five test players and a game for two
+ [x] The invitation
+

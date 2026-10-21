@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Integration tests: run them as described in docker/README.md, section 3. -->
+<phpunit bootstrap="bootstrap.php" colors="true" executionOrder="default" failOnWarning="true">
+  <testsuites>
+    <testsuite name="component-integration">
+      <file>UsersLibraryTest.php</file>
+      <file>GomokuEngineTest.php</file>
+      <file>ChessEngineTest.php</file>
+      <file>OthelloEngineTest.php</file>
+      <file>HnefataflEngineTest.php</file>
+      <file>StrategoEngineTest.php</file>
+      <file>LudoEngineTest.php</file>
+      <file>YatzyEngineTest.php</file>
+      <file>BackgammonEngineTest.php</file>
+      <file>CheckersEngineTest.php</file>
+      <file>MorrisEngineTest.php</file>
+      <file>NonogramEngineTest.php</file>
+      <file>RunborgEngineTest.php</file>
+      <file>SudokuEngineTest.php</file>
+      <file>OwldokuEngineTest.php</file>
+      <file>BlockdokuEngineTest.php</file>
+    </testsuite>
+    <testsuite name="system-api">
+      <file>MyDataApiTest.php</file>
+      <file>RosterApiTest.php</file>
+      <file>TextsApiTest.php</file>
+      <file>TextsAdminApiTest.php</file>
+      <file>LinkApiTest.php</file>
+      <file>SessionSecurityTest.php</file>
+      <file>GomokuApiTest.php</file>
+      <file>GomokuRewardsTest.php</file>
+      <file>ChessApiTest.php</file>
+      <file>OthelloApiTest.php</file>
+      <file>HnefataflApiTest.php</file>
+      <file>StrategoApiTest.php</file>
+      <file>BoardGameRewardsTest.php</file>
+      <file>SavedGamesTest.php</file>
+      <file>RemindersApiTest.php</file>
+      <file>BoardSettingsApiTest.php</file>
+      <file>AppearanceApiTest.php</file>
+      <file>LudoApiTest.php</file>
+      <file>YatzyApiTest.php</file>
+      <file>BackgammonApiTest.php</file>
+      <file>CheckersApiTest.php</file>
+      <file>MorrisApiTest.php</file>
+      <file>NonogramApiTest.php</file>
+      <file>SudokuApiTest.php</file>
+      <file>OwldokuApiTest.php</file>
+      <file>BlockdokuApiTest.php</file>
+      <file>PuzzleSavesApiTest.php</file>
+      <file>BerserkApiTest.php</file>
+      <file>RunborgApiTest.php</file>
+      <file>RunborgFriendApiTest.php</file>
+      <file>MembersApiTest.php</file>
+      <file>AvatarApiTest.php</file>
+      <file>PlayersApiTest.php</file>
+      <file>AdminApiTest.php</file>
+      <file>ChallengeApiTest.php</file>
+      <file>ReportApiTest.php</file>
+    </testsuite>
+  </testsuites>
+  <logging>
+    <junit outputFile="/qa/test-results/integration-junit.xml"/>
+    <testdoxText outputFile="/qa/test-results/integration-testdox.txt"/>
+  </logging>
+</phpunit>
